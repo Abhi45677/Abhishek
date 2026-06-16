@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Smart Computer Training Center, Kahla, Bihar — Mission, Vision, Faculty and Infrastructure." />
+  <title>About Us — Smart Computer Training Center</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+<body data-page="about">
+<div id="nav-slot"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container-x">
+      <p class="eyebrow">About Us · हमारे बारे में</p>
+      <h1 class="h1 font-display" style="margin-top:0.75rem;max-width:48rem;">Building digital confidence — one student at a time.</h1>
+      <p style="margin-top:1.25rem;font-size:1.125rem;color:#475569;max-width:36rem;">Since 2020, <span style="font-weight:600;color:#1e3a8a;">Smart Computer Training Center</span> has been the trusted computer learning hub of Kahla, Bihar.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x" style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;" id="about-intro">
+      <div style="border-radius:1.5rem;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.15);border:4px solid #fff;">
+        <img src="https://images.pexels.com/photos/5530484/pexels-photo-5530484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Students at lab" style="width:100%;aspect-ratio:4/3;object-fit:cover;" />
+      </div>
+      <div>
+        <h2 class="h2 font-display">A small-town institute with <span style="color:#1e3a8a;">big ambitions</span>.</h2>
+        <p style="margin-top:1.25rem;color:#475569;line-height:1.65;">We started with one goal — to bring the same quality of computer education available in cities to students in our village. Today, we are proud to have trained 500+ students from across Saran district, many of whom now work in banking, government departments, retail billing, and freelance design.</p>
+        <p style="margin-top:1rem;color:#475569;line-height:1.65;">Our trainers focus on practical learning. Every student gets dedicated computer time, real-life assignments, and one-on-one doubt clearing — because that's how skills are built.</p>
+        <div style="margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
+          <a href="courses.html" class="btn btn-dark">See Our Courses <i data-lucide="arrow-right" width="16" height="16"></i></a>
+          <a href="contact.html" class="btn" style="border:2px solid #f97316;color:#ea580c;background:transparent;" onmouseover="this.style.background='#f97316';this.style.color='#fff';" onmouseout="this.style.background='transparent';this.style.color='#ea580c';">Visit Us</a>
+        </div>
+      </div>
+    </div>
+    <style>@media (min-width:1024px){#about-intro{grid-template-columns:1fr 1fr !important;}}</style>
+  </section>
+
+  <section class="section" style="background:#f8fafc;padding:5rem 0;">
+    <div class="container-x">
+      <div style="text-align:center;max-width:42rem;margin:0 auto 3rem;">
+        <p class="eyebrow">What Drives Us</p>
+        <h2 class="h2 font-display" style="margin-top:0.75rem;">Mission · Vision · Values</h2>
+      </div>
+      <div id="pillars" style="display:grid;grid-template-columns:1fr;gap:1.5rem;"></div>
+    </div>
+    <style>@media (min-width:768px){#pillars{grid-template-columns:repeat(3,1fr) !important;}}</style>
+  </section>
+
+  <section class="section">
+    <div class="container-x">
+      <div style="max-width:42rem;margin-bottom:3rem;">
+        <p class="eyebrow">Our Faculty</p>
+        <h2 class="h2 font-display" style="margin-top:0.75rem;">Trainers who genuinely care.</h2>
+      </div>
+      <div id="faculty" style="display:grid;grid-template-columns:1fr;gap:1.25rem;"></div>
+    </div>
+    <style>@media (min-width:640px){#faculty{grid-template-columns:1fr 1fr !important;}}@media (min-width:1024px){#faculty{grid-template-columns:repeat(3,1fr) !important;}}</style>
+  </section>
+
+  <section style="padding:5rem 0;background:#1e3a8a;color:#fff;">
+    <div class="container-x" id="infra" style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;">
+      <div>
+        <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#fdba74;">Infrastructure</p>
+        <h2 class="h2 font-display" style="margin-top:0.75rem;">A modern lab in the heart of Kahla.</h2>
+        <ul id="infra-list" style="margin-top:1.5rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:0.75rem;color:#bfdbfe;"></ul>
+      </div>
+      <div style="border-radius:1.5rem;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.4);border:4px solid #1d4ed8;">
+        <img src="https://images.pexels.com/photos/5530447/pexels-photo-5530447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Computer Lab" style="width:100%;aspect-ratio:4/3;object-fit:cover;" />
+      </div>
+    </div>
+    <style>@media (min-width:1024px){#infra{grid-template-columns:1fr 1fr !important;}}</style>
+  </section>
+</main>
+
+<div id="footer-slot"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pillars = [
+      { icon:"target", title:"Our Mission", titleHi:"हमारा मिशन", desc:"To make quality computer education affordable and accessible to every student in Bihar, regardless of background." },
+      { icon:"eye", title:"Our Vision", titleHi:"हमारी दृष्टि", desc:"Becoming the most trusted IT training institute in North Bihar — empowering rural youth with future-ready skills." },
+      { icon:"award", title:"Our Values", titleHi:"हमारे मूल्य", desc:"Honesty, hands-on learning, individual attention, and lifelong career support for every student." },
+    ];
+    document.getElementById("pillars").innerHTML = pillars.map((p) => `
+      <div class="card" style="padding:1.75rem;">
+        <div style="height:48px;width:48px;border-radius:0.75rem;background:#1e3a8a;color:#fff;display:inline-flex;align-items:center;justify-content:center;"><i data-lucide="${p.icon}" width="20" height="20"></i></div>
+        <h3 class="font-display" style="margin:1.25rem 0 0;font-weight:600;font-size:1.125rem;">${p.title}</h3>
+        <p style="font-size:0.75rem;color:#ea580c;font-weight:600;margin:0 0 0.5rem;">${p.titleHi}</p>
+        <p style="font-size:0.875rem;color:#475569;line-height:1.6;margin:0;">${p.desc}</p>
+      </div>
+    `).join("");
+
+    const faculty = [
+      { name:"Sandeep Kumar", role:"Founder & Senior Trainer", exp:"10+ yrs · DCA / ADCA / Tally" },
+      { name:"Amit Raj", role:"Programming Trainer", exp:"Python · Web Design" },
+      { name:"Neha Singh", role:"Office Applications Faculty", exp:"MS Office · Excel · Tally" },
+    ];
+    document.getElementById("faculty").innerHTML = faculty.map((f) => `
+      <div class="card card-hover" style="padding:1.75rem;">
+        <div style="height:56px;width:56px;border-radius:1rem;background:#ffedd5;color:#ea580c;font-weight:700;font-size:1.25rem;display:inline-flex;align-items:center;justify-content:center;" class="font-display">${f.name.split(" ").map(n=>n[0]).join("")}</div>
+        <h3 class="font-display" style="margin:1.25rem 0 0;font-weight:600;font-size:1.125rem;color:#0f172a;">${f.name}</h3>
+        <p style="font-size:0.875rem;color:#1e3a8a;font-weight:600;margin:0;">${f.role}</p>
+        <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">${f.exp}</p>
+      </div>
+    `).join("");
+
+    const infra = [
+      "20+ workstations with up-to-date software",
+      "Inverter & generator backup — no downtime",
+      "AC classroom & comfortable seating",
+      "High-speed broadband Internet",
+      "Printer, scanner and projector for live demos",
+      "Reading library with course books",
+    ];
+    document.getElementById("infra-list").innerHTML = infra.map((i) => `<li style="display:flex;gap:0.75rem;align-items:flex-start;"><i data-lucide="building-2" width="16" height="16" style="color:#fb923c;flex-shrink:0;margin-top:4px;"></i><span>${i}</span></li>`).join("");
+
+    if (window.lucide) lucide.createIcons();
+  });
+</script>
+</body>
+</html>

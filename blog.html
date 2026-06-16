@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Blog — Computer skill tips, tutorials and learning paths from Smart Computer Training Center." />
+  <title>Blog — Smart Computer Training Center</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+<body data-page="blog">
+<div id="nav-slot"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container-x">
+      <p class="eyebrow">Blog · ब्लॉग</p>
+      <h1 class="h1 font-display" style="margin-top:0.75rem;max-width:48rem;">Computer skills, <span style="color:#1e3a8a;">decoded</span>.</h1>
+      <p style="margin-top:1.25rem;font-size:1.125rem;color:#475569;max-width:36rem;">Career tips, tutorials, and learning paths — written for students in plain Hindi-English language.</p>
+    </div>
+  </section>
+
+  <section style="padding:4rem 0 5rem;">
+    <div class="container-x">
+      <div id="blog-grid" style="display:grid;grid-template-columns:1fr;gap:1.5rem;"></div>
+
+      <div style="margin-top:3.5rem;text-align:center;">
+        <p style="font-size:0.875rem;color:#64748b;">More articles coming soon. Want to suggest a topic?</p>
+        <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">Suggest a Topic</a>
+      </div>
+    </div>
+    <style>@media (min-width:768px){#blog-grid{grid-template-columns:1fr 1fr !important;}}@media (min-width:1024px){#blog-grid{grid-template-columns:repeat(3,1fr) !important;}}</style>
+  </section>
+</main>
+
+<div id="footer-slot"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("blog-grid").innerHTML = BLOG_POSTS.map((p) => `
+      <article class="card card-hover" style="overflow:hidden;">
+        <div style="aspect-ratio:16/10;overflow:hidden;background:#f1f5f9;"><img src="${p.image}" alt="${p.title}" style="width:100%;height:100%;object-fit:cover;" loading="lazy" /></div>
+        <div style="padding:1.5rem;">
+          <p style="font-size:0.75rem;color:#64748b;display:inline-flex;align-items:center;gap:0.375rem;font-weight:500;margin:0;"><i data-lucide="calendar" width="12" height="12"></i>${p.date}</p>
+          <h3 class="font-display" style="margin:0.75rem 0 0;font-weight:600;font-size:1.125rem;color:#0f172a;">${p.title}</h3>
+          <p style="margin:0.5rem 0 0;font-size:0.875rem;color:#475569;line-height:1.6;">${p.excerpt}</p>
+          <a href="#" style="margin-top:1rem;display:inline-flex;align-items:center;gap:0.25rem;color:#ea580c;font-size:0.875rem;font-weight:600;text-decoration:none;">Read more <i data-lucide="arrow-right" width="14" height="14"></i></a>
+        </div>
+      </article>
+    `).join("");
+    if (window.lucide) lucide.createIcons();
+  });
+</script>
+</body>
+</html>
